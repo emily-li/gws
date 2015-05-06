@@ -8,7 +8,7 @@ def hjt(a, t1, t2, tpeak):
 	at = a * (e**(-t/t1) - e**(-t/t2)) / e**(-tpeak/t1) - e**(-tpeak/t2)
 	return V_pre * at #5 (hj(t) = sj(t) * a(t))
 
-#Model neurons (single-compartment intergrate-and-fire units)
+#Model neurons (single-compartment integrate-and-fire units)
 C = 1 * uF								#capacitance
 gleak = 0.1 * msiemens					#leak conductance
 #tau = C/gleak 							#membrane time constant (C/gleak) in ms
